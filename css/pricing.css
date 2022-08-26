@@ -1,0 +1,50 @@
+.pricing__container {
+    height: 465px;
+    margin-top: 59px;
+    margin-bottom: 214px;
+}
+
+.price_text {
+    width: 730px;
+    padding-bottom: 50px;
+}
+
+.price_intro {
+    display: flex;
+    gap: 30px;
+}
+
+.price_info {
+    width: 350px;
+}
+
+.heading {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    color: #091133;
+}
+
+.price_product_name {
+    font-weight: 500;
+    font-size: 25px;
+    color: #091133;
+}
+
+.price_product_info {
+    padding-top: 8px;
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 15px;
+}
+
+.pricing_button {
+    margin-top: 20px;
+    width: 189px;
+    height: 26px;
+    background: #111b47;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 18px;
+}
