@@ -1,0 +1,161 @@
+.header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.header__title {
+    margin-right: auto;
+    font-weight: 900;
+    font-size: 26px;
+}
+
+.header__nav ul {
+    display: flex;
+}
+
+.header__nav ul li a {
+    padding: 2rem;
+}
+
+.header__nav li:hover {
+    background-color: whitesmoke;
+}
+
+.header__nav-item {
+    margin-right: 2.5rem;
+    font-size: 14px;
+}
+
+.header__buy-now {
+    background: #FFD166;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #111B47;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 104px;
+    border: 0;
+}
+
+.header__learn-more {
+    background: #111B47;
+    border-radius: 2px;
+    font-size: 12px;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 104px;
+    border: 0;
+    margin-right: 26px;
+}
+
+.toggle_button {
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    transform: rotate(0deg);
+    transition: transform 5s;
+}
+
+.toggle_button:hover {
+    transform: rotate(180deg);
+}
+
+.toggle_button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #111B47;
+    border-radius: 10px;
+}
+
+@keyframes fade-inout {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+
+.header__title {
+    animation: fade-inout 2s infinite alternate;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 20px;
+        background-color: white;
+        z-index: 10;
+    }
+
+    .header__buy-now,
+    .header__learn-more {
+        display: none;
+    }
+
+    .header__nav-item {
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .toggle_button {
+        display: flex;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__nav {
+        width: 100%;
+        background-color: lightblue;
+        margin: 0 auto;
+        margin-top: 20px;
+        top: 72px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 0;
+    }
+
+    .header__nav ul {
+        flex-direction: column;
+        width: 100%;
+        min-height: auto;
+        margin: 0 auto;
+    }
+
+    .header__nav ul li {
+        margin-left: 190px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .header__nav li a {
+        font-weight: 500;
+    }
+
+    .header__nav.open {
+        display: flex;
+    }
+}
