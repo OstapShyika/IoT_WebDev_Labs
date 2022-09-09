@@ -1,0 +1,140 @@
+.footer {
+    /* background: #E7ECFF; */
+    /* min-height: 320px; */
+    padding-bottom: 0px;
+    /* min-width: 100vw; */
+}
+
+.footer .container {
+    background: #E7ECFF;
+    padding-bottom: 50px;
+}
+
+.footer__labels {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.footer__date {
+    /* margin-top: 37px; */
+    white-space: nowrap;
+    align-items: center;
+    width: 83px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #939EA4;
+    /* padding-right: 938px; */
+    margin-right: auto;
+}
+
+.footer__title {
+    font-weight: 900;
+    font-size: 26px;
+    color: #37447E;
+    /* display: inline-block; */
+    padding-right: 0px;
+    transform: translateY(0);
+    animation: f11 3s infinite linear;
+}
+
+.footer__title::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #000;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    animation: f12 3s infinite linear;
+}
+
+
+@keyframes f11 {
+    30% {
+        transform: translateY(10%) rotate(4deg);
+    }
+
+    70% {
+        transform: translateY(10%) rotate(-4deg);
+    }
+}
+
+@keyframes f12 {
+    30% {
+        clip-path: polygon(0 0, 100% 0, 100% 24%, 0 56%);
+    }
+
+    70% {
+        clip-path: polygon(0 0, 100% 0, 100% 56%, 0 24%);
+    }
+}
+
+.footer__hr {
+    background: #cdd1d4;
+    margin-top: 58px;
+    height: 1px;
+    border: 0;
+    margin-bottom: 0;
+}
+
+.footer__btn {
+    text-align: center;
+}
+
+.footer__branding__label {
+    margin-top: 21px;
+    width: 110px;
+    background: #111b47;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    color: #ffffff;
+    border-radius: 2px;
+    padding: 5px 0;
+}
+
+.footer__menu {
+    padding-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    width: 245px;
+    margin: 0 auto;
+}
+
+.footer ul {
+    padding-left: 0px;
+}
+
+.footer__social {
+    padding-top: 26px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.social-image {
+    width: 16px;
+}
+
+@media screen and (min-width: 1110px) {
+    .footer .container {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .footer {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        margin: 0 auto;
+    }
+}
